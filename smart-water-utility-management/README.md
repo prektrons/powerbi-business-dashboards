@@ -45,3 +45,35 @@ powerbi/         → Power BI dashboard files and screenshots
 python/          → Data profiling and analysis
 dax/             → DAX measures
 images/          → Project visuals
+
+
+
+
+Executive Overview
+
+Page 1 — Executive Overview provides a high-level view of water-quality conditions across the monitored river stations in Jeonbuk, South Korea. The page is designed to help users quickly understand the monitoring coverage, measurement volume, and overall behavior of key water-quality indicators.
+
+The dashboard summarizes Biochemical Oxygen Demand (BOD), Chemical Oxygen Demand (COD), Dissolved Oxygen (DO), and pH, while allowing users to filter results by year, season, district, and monitoring station.
+
+Key questions answered
+How many monitoring stations are represented in the dataset?
+How many water-quality measurements are available?
+What are the average BOD, COD, DO, and pH levels?
+How have BOD, COD, and DO changed over time?
+Which monitoring stations have the highest average BOD?
+Which districts show higher average BOD levels?
+How do the results change when filtering by year, season, district, or station?
+Main dashboard components
+Component	Purpose
+Monitoring Stations	Shows the number of unique monitoring stations
+Total Measurements	Shows the number of records available
+Average BOD	Summarizes biodegradable organic pollution demand
+Average COD	Summarizes chemical oxygen demand
+Average DO	Shows dissolved oxygen availability
+Average pH	Shows the overall acidity/alkalinity indicator
+BOD Trend	Examines BOD changes over time
+COD Trend	Examines COD changes over time
+DO Trend	Examines dissolved oxygen changes over time
+Top 10 Stations by Average BOD	Identifies stations requiring further investigation
+Average BOD by District	Compares geographic variation
+Slicers	Enables year, season, district, and station-level exploration
