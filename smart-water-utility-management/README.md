@@ -77,3 +77,67 @@ DO Trend	Examines dissolved oxygen changes over time
 Top 10 Stations by Average BOD	Identifies stations requiring further investigation
 Average BOD by District	Compares geographic variation
 Slicers	Enables year, season, district, and station-level exploration
+
+
+
+### Page 2 — Water Quality Trends
+
+The Water Quality Trends page focuses on understanding how key water-quality indicators change over time across the Jeonbuk river monitoring network.
+
+The page uses time-series visualizations to help identify long-term patterns, fluctuations, and potential periods requiring further investigation.
+
+### Indicators Analyzed
+
+The page currently includes six time-series indicators:
+
+| Indicator | Measure | Unit | Analytical Purpose |
+|---|---|---|---|
+| BOD | Average BOD | mg/L | Analyze biodegradable organic pollution trends |
+| COD | Average COD | mg/L | Analyze chemical oxygen demand trends |
+| DO | Average DO | mg/L | Monitor dissolved oxygen availability |
+| pH | Average pH | pH units | Monitor acidity and alkalinity patterns |
+| Water Temperature | Average Water Temperature | °C | Examine temperature variation over time |
+| Suspended Solids | Average SS | mg/L | Analyze suspended particulate trends |
+
+### Visualizations
+
+The page contains six line charts:
+
+- **BOD Trend Over Time**
+- **COD Trend Over Time**
+- **Dissolved Oxygen Trend**
+- **pH Trend Over Time**
+- **Water Temperature Trend**
+- **Suspended Solids Trend**
+
+Interactive slicers allow users to filter the analysis by:
+
+- Year
+- Season
+- District
+- Monitoring Station
+
+### Key Questions
+
+The page is designed to answer questions such as:
+
+- How does BOD change over time?
+- How does COD change over time?
+- Are dissolved oxygen levels changing across the monitoring period?
+- Is pH relatively stable or variable?
+- How does water temperature change over time?
+- Are there periods with unusually high suspended solids?
+- How do these trends change when examining a specific district or monitoring station?
+- Do seasonal or geographic filters reveal different patterns?
+
+### Analytical Approach
+
+The page uses the `Dim_Date` table for time-based analysis and the following measures:
+
+```text
+Average BOD
+Average COD
+Average DO
+Average pH
+Average Water Temperature
+Average SS
