@@ -1,5 +1,4 @@
-# Smart Water Utility Management & Water Quality Intelligence
-# Smart Water Utility Intelligence Dashboard — South Korea
+# Smart Water Utility Management & Water Quality Intelligence-South Korea
 
 An interactive business intelligence project analyzing
 water-quality monitoring data from Jeonbuk, South Korea.
