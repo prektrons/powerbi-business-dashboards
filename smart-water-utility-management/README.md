@@ -47,10 +47,17 @@ images/          → Project visuals
 
 
 
+### Dashboard Development Status
 
-Executive Overview
+| Dashboard Page | Status |
+|---|---|
+| Page 1 — Executive Overview | ✅ Completed |
+| Page 2 — Water Quality Trends | ✅ Completed |
+| Page 3 — Station & Geographic Analysis | ✅ Completed |
+| Page 4 — Pollution & Nutrient Analysis | 🔄 Planned |
+| Page 5 — Risk & Decision Support | 🔄 Planned |
 
-Page 1 — Executive Overview provides a high-level view of water-quality conditions across the monitored river stations in Jeonbuk, South Korea. The page is designed to help users quickly understand the monitoring coverage, measurement volume, and overall behavior of key water-quality indicators.
+### Page 1 — Executive Overview provides a high-level view of water-quality conditions across the monitored river stations in Jeonbuk, South Korea. The page is designed to help users quickly understand the monitoring coverage, measurement volume, and overall behavior of key water-quality indicators.
 
 The dashboard summarizes Biochemical Oxygen Demand (BOD), Chemical Oxygen Demand (COD), Dissolved Oxygen (DO), and pH, while allowing users to filter results by year, season, district, and monitoring station.
 
@@ -140,3 +147,59 @@ Average DO
 Average pH
 Average Water Temperature
 Average SS
+
+
+### Page 3 — Station & Geographic Analysis
+
+The Station & Geographic Analysis page focuses on identifying differences in water-quality conditions across districts and individual monitoring stations within the Jeonbuk river monitoring network.
+
+While Page 1 provides an overall executive view and Page 2 examines temporal trends, Page 3 answers the geographic question:
+
+> Where are differences in water-quality indicators concentrated?
+
+The page compares average BOD, COD, Dissolved Oxygen (DO), and pH across districts and identifies monitoring stations with comparatively high average BOD.
+
+#### Key Questions
+
+The page is designed to answer:
+
+- Which districts have higher average BOD levels?
+- Which districts have higher average COD levels?
+- How does dissolved oxygen vary across districts?
+- How does pH vary across districts?
+- Which monitoring stations have the highest average BOD?
+- How does a selected district or monitoring station compare with the wider monitoring network?
+- Do geographic filters reveal different water-quality patterns?
+
+#### Visualizations
+
+The page contains five primary visuals:
+
+1. **Average BOD by District**
+2. **Average COD by District**
+3. **Average Dissolved Oxygen by District**
+4. **Average pH by District**
+5. **Top 10 Monitoring Stations by Average BOD**
+
+#### Geographic Analysis
+
+The district-level visuals provide a comparative view of water-quality indicators across administrative areas represented in the dataset.
+
+BOD and COD are used to examine oxygen-demand-related pollution indicators, while DO and pH provide additional context regarding water chemistry and oxygen availability.
+
+The analysis is descriptive and is intended to identify patterns and locations that may warrant further investigation. It does not classify a location as compliant or non-compliant without applying the appropriate water-quality standards.
+
+#### Station-Level Analysis
+
+The **Top 10 Monitoring Stations by Average BOD** visual provides a more detailed view of station-level variation.
+
+The visual uses a Top N filter to identify the ten monitoring stations with the highest average BOD within the current filter context.
+
+This allows users to move from:
+
+```text
+Regional Overview
+       ↓
+District Comparison
+       ↓
+Station-Level Investigation
